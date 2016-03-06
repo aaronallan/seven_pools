@@ -354,26 +354,21 @@
 	<div class="contact_form">
 		<h1>Inquiries:	</h1>
 		
-    	<form action="formmail.php" method="post" id="form">
-       		 <input type="hidden" name="recipients" value="aaron.a.pollock_*_gmail.com">
-             <input type="hidden" name="good_url" value="/">
-         
-        	<div class="holder">
-         
-            		<input type="text" name="name" class="input" placeholder="Name:">
-            </div>
-            <div class="holder">
-         
-            		<input type="text" name="email" class="input" placeholder="E-Mail:">
-            </div>	
-            <div class="holder">
-         
-            		<textarea name="Inquiry" class="input" placeholder="Notes:"></textarea>        
-            </div>		
-            <div class="holder">
-            	<input type="submit" class="button">
-            </div>    
-        </form>	
+    	<form action="//formspree.io/aaron.a.pollock@gmail.com" method="post" id="form"> 
+      	<div class="holder">       
+        	<input type="text" name="name" class="input" placeholder="Name:">
+        </div>
+        <div class="holder">
+        	<input type="text" name="email" name="_replyto" class="input" placeholder="E-Mail:">
+        	<input type="hidden" name="_next" value="//sevenpools.net/#thankyou">
+        </div>	
+        <div class="holder">
+        	<textarea name="Inquiry" class="input" placeholder="Notes:"></textarea>        
+        </div>		
+        <div class="holder">
+        	<input type="submit" class="button">
+        </div>    
+      </form>	
         <br>
 		<p> Twitter: <a href="https://twitter.com/@G_Pryor" target="_blank">@G_Pryor</a></p><p> LinkedIn: 
 		<a href="http://www.linkedin.com/profile/view?id=891672&locale=en_US&trk=tyah" target="_blank"> Gale Pryor</a></p>
