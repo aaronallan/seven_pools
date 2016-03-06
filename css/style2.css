@@ -936,3 +936,7 @@ input:-moz-placeholder { color:#222222; }
 	text-decoration: underline;
 }
 
+#thankyou {
+	display: none;
+}
+

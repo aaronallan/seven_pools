@@ -353,7 +353,6 @@
 	<div id="anchor_contact_us"></div>
 	<div class="contact_form">
 		<h1>Inquiries:	</h1>
-		
     	<form action="//formspree.io/aaron.a.pollock@gmail.com" method="post" id="form"> 
       	<div class="holder">       
         	<input type="text" name="name" class="input" placeholder="Name:">
@@ -368,12 +367,16 @@
         <div class="holder">
         	<input type="submit" class="button">
         </div>    
-      </form>	
+      </form>
+      <div id="thankyou">
+				<p>Thank you for your message, I will follow up soon.</p>
+			</div>	
         <br>
 		<p> Twitter: <a href="https://twitter.com/@G_Pryor" target="_blank">@G_Pryor</a></p><p> LinkedIn: 
 		<a href="http://www.linkedin.com/profile/view?id=891672&locale=en_US&trk=tyah" target="_blank"> Gale Pryor</a></p>
 	</div>
 </div>
+	
 	<div id="footer">
 		<div class="footwrap">	
 			<p>&copy; Copyright Seven Pools 2016. All Rights Reserved.</p>
@@ -500,6 +503,10 @@ $('.directional, .homeframe--content, .homeframe--header').click(function(event)
 	
 		
 			});
+
+		$('#form').on('submit', function () {
+			$('#thankyou').css('display', 'block');
+		});
 
 </script>
 
